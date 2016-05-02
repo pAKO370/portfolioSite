@@ -241,10 +241,25 @@ hr{
 		flex-direction: row;
 		justify-content: space-between;
 		margin: 0 auto;
+		left: 600px;
+		transition-property: left;
+		transition-duration: 2s;
+	}
+	#form {
+		position: relative;
+		left: 600px;
+		transition-property: left;
+		transition-duration: .9s;
+		transition-timing-function: ease-out;
 	}
 	.section-left {
+		position: relative;
 		display: inline-block;
 		width: 60%;
+		left: -600px;
+		transition-property: left;
+		transition-duration: .9s;
+		transition-timing-function: ease-out;
 	}
 	#contact{
 		display: none;
