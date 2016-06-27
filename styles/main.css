@@ -3,8 +3,10 @@ body {
 	background-color: ghostwhite;
 	position: relative;
 	padding-bottom: 75px;
+
 }
-#name{
+
+.name{
 	font-size: 2rem;
 	margin: 0px;
 	color: #333;
@@ -62,14 +64,52 @@ li span {
 	font-size: 1.7rem;
 }
 .ion-email:hover,.ion-social-facebook:hover,.ion-social-github:hover,.ion-social-linkedin:hover {
-	-webkit-transform: scale(1.6);
-	transform: scale(1.6)
+	-webkit-transform: scale(1.4);
+	transform: scale(1.4)
 }
 .h2-div {
 	padding-left: 3rem;
 	padding-right: 3rem;
 	margin-top: 40px;
 	text-align: center;
+}
+.hidden-nav {
+	background-color: #333;
+	color: white;
+	transition: all .5s ease-in;
+	position: fixed;
+	width: 100%;
+	margin-top: -100px;
+	z-index: 100;
+}
+.hidden-nav .ion-email,
+.hidden-nav .ion-social-facebook,
+.hidden-nav .ion-social-github,
+.hidden-nav .ion-social-linkedin {
+	color: white;
+	position: relative;
+	margin-top: -100px;
+}
+.hidden-nav .ion-email {
+	transition: margin-top .8s ease-in;
+	
+}
+.hidden-nav .ion-social-facebook {
+	transition: margin-top 1s ease-in;
+}
+.hidden-nav .ion-social-github{
+	transition: margin-top 1.2s ease-in;
+}
+.hidden-nav .ion-social-linkedin{
+	transition: margin-top 1.4s ease-in;
+}
+#name{
+	font-size: 2rem;
+	margin: 0px;
+	color: white;
+	position: relative;
+	/* margin-left: -600px; */
+	transition: all 1s ease-in-out;
 }
 #header{
 	position: relative;
@@ -214,6 +254,7 @@ hr{
 		width: 450px;
 		margin: 0 auto;
 	}
+	.name,
 	#name{
 		font-size: 2.5rem;
 	}
@@ -263,7 +304,8 @@ hr{
 		min-height: 8rem;
 	}
 
-	#name{
+	#name,
+	.name{
 		font-size: 2.9rem;
 	}
 	#skills{
@@ -298,6 +340,7 @@ hr{
 		-webkit-transition-duration: 2s;
 		transition-duration: 2s;
 		padding: 0 14% 0 8%;
+		overflow: hidden;
 	}
 	#form {
 		position: relative;
